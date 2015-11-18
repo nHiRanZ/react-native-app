@@ -66,6 +66,26 @@ var Profile = React.createClass({
         );
     },
 
+    onAddToCartPressed: function(){
+        AlertIOS.alert(
+            'Item added to Cart!',
+            null,
+            [
+                {text: 'Okay', onPress: () => console.log('Okay Pressed!')},
+            ]
+        )
+    },
+
+    onSharePressed: function(){
+        AlertIOS.alert(
+            'Share',
+            'Do you want to Share this Item?',
+            [
+                {text: 'Cancel', onPress: () => console.log('Cancel Pressed!')},
+                {text: 'Share', onPress: () => console.log('Share Pressed!')},
+            ]
+        )
+    },
 
     renderItem: function (item) {
         return (
@@ -80,23 +100,10 @@ var Profile = React.createClass({
                     <Text style={styles.text}>Rs.{item.price}</Text>
                 </View>
                 <View style={styles.buttonContainer}>
-                    <TouchableHighlight underlayColor="#36ea00" style={styles.button}onPress={() => AlertIOS.alert(
-                        'Share',
-                        'Do you want to Share this item?',
-                        [
-                          {text: 'Cancel', onPress: () => console.log('Cancel Pressed!')},
-                          {text: 'Share', onPress: () => console.log('Share Pressed!')},
-                        ]
-                    )}>
+                    <TouchableHighlight underlayColor="#36ea00" style={styles.button}onPress={this.onSharePressed}>
                         <Text style={styles.buttonText}>Share</Text>
                     </TouchableHighlight>
-                    <TouchableHighlight underlayColor="#36ea00" style={styles.button}onPress={() => AlertIOS.alert(
-                        'Item added to Cart!',
-                        null,
-                        [
-                          {text: 'Okay', onPress: () => console.log('Okay Pressed!')},
-                        ]
-                    )}>
+                    <TouchableHighlight underlayColor="#36ea00" style={styles.button}onPress={this.onAddToCartPressed}>
                         <Text style={styles.buttonText}>Add to Cart</Text>
                     </TouchableHighlight>
                 </View>
