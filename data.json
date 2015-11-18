@@ -1,0 +1,46 @@
+{
+   "total":5,
+   "fooditems":[
+      {
+         "id":"1",
+         "name":"Chicken Burger",
+         "price":400,
+         "images":{
+            "main":"http://www.coucoufood.com/wp-content/uploads/2015/03/Chicken-Burger.jpg"
+         }
+      },
+      {
+         "id":"2",
+         "name":"Chocolate Cake",
+         "price":200,
+         "images":{
+            "main":"http://www.cravebits.com/wp-content/uploads/2014/06/Raspberry_Chocolate_Cake.jpg"
+         }
+      },
+      {
+         "id":"3",
+         "name":"Chicken Submarine",
+         "price":"350",
+         "images":{
+            "main":"http://www.atriumdining.com/images/ChickenSupreme.jpg"
+         }
+      },
+      {
+         "id":"4",
+         "name":"Hotdog",
+         "price":150,
+         "images":{
+            "main":"http://www.todayifoundout.com/wp-content/uploads/2014/01/hot-dog.jpg"
+         }
+      },
+      {
+         "id":"5",
+         "name":"Iced Coffee",
+         "price":100,
+         "synopsis":"",
+         "images":{
+            "main":"http://recipes.saladmaster.com/sites/default/files/iStock_000015244664Medium_Iced%20Coffee.jpg"
+         }
+      }
+   ]
+}
